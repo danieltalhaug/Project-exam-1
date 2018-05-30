@@ -1,3 +1,96 @@
 @charset "utf-8";
-/* CSS Document */
+/* CSS Document 
+font-family: 'Montserrat', sans-serif;
+font-family: 'Quicksand', sans-serif;
+colours: 
+Dark blue: #2D303B RGB 45 48 59
+Light blue: HEX #DCE3FF RGB 220 227 255
+Dark blue: HEX #2861BC RGB 40 97 188
+Lighter Blue: HEX #2CAFFF RGB 44 175 255
+*/
+body {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.6;
+	margin: 0;
+}
+/* 
 
+
+					Navigation 
+
+
+*/
+
+.main-nav {
+  	padding: 0;
+  	list-style: none;
+}
+.main-nav a {
+	text-decoration: none;
+	padding: 50px 0;
+	text-align: center;
+	display: block;
+	color: #2861BC;
+	font-size: 1em;
+	font-weight: 600;
+}
+.main-nav a:hover {
+	color: #4D91FF;
+}
+.nav-container {
+	background-color: #f4f4f4; /* placeholder*/
+	padding-top: 5px;
+	padding-bottom: 80%;
+	flex-direction: row;
+	justify-content: flex-end;
+    z-index: 1;
+	position: absolute;
+	display: none;
+}
+.nav-container.open {
+	display: block;
+	width: 100%;
+	transition: .4s;
+}
+.hamburger-menu {
+	display: block;
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	background-color: #f4f4f4; /* placeholder*/
+	padding: 5px;
+	cursor: pointer;
+	z-index: 5;
+}
+.hamburger-menu div {
+	width: 35px;
+    height: 5px;
+	margin: 5px 0;
+    background-color: black;
+	z-index: 10;
+}
+/* 
+
+
+					Media Queries 
+
+
+*/
+
+@media (min-width: 1025px) {
+	.nav-container,
+	.main-nav {
+		display: flex;
+	}
+	.nav-container {
+		padding-bottom: 5px;
+		max-width: 2560px;
+		position: static;
+	}
+	.main-nav a {
+		padding: 2px 50px;
+	}
+	.hamburger-menu {
+		display: none;
+	}
+}
