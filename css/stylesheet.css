@@ -27,12 +27,13 @@ body {
 }
 .main-nav a {
 	text-decoration: none;
-	padding: 50px 0;
+	padding: 20px 0;
 	text-align: center;
 	display: block;
 	color: #2861BC;
 	font-size: 1em;
 	font-weight: 600;
+	border: 1px solid white;
 }
 .main-nav a:hover {
 	color: #4D91FF;
@@ -44,11 +45,13 @@ body {
 	flex-direction: row;
 	justify-content: flex-end;
     z-index: 1;
-	position: absolute;
-	display: none;
+	position: fixed;
+	top: 0;
+    right: 0;
+	width: 0;
+	
 }
 .nav-container.open {
-	display: block;
 	width: 100%;
 	transition: .4s;
 }
@@ -86,9 +89,13 @@ body {
 		padding-bottom: 5px;
 		max-width: 2560px;
 		position: static;
+		top: 0;
+    	left: 0;
+		width: 100%;
 	}
 	.main-nav a {
 		padding: 2px 50px;
+		border: none;
 	}
 	.hamburger-menu {
 		display: none;
