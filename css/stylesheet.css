@@ -13,6 +13,15 @@ body {
 	line-height: 1.6;
 	margin: 0;
 }
+h1, h2, h3 {
+	font-family: 'Quicksand', sans-serif;
+	color: #2861BC;
+}
+h1 {
+	font-size: 3.5em;
+	text-align: center;
+	padding: 20px 0 20px 0;
+}
 /* 
 
 
@@ -79,6 +88,42 @@ body {
 
 
 */
+main {
+	max-width: 1280px;
+	margin: auto;
+}
+ /* 
+					Latest Launch 
+*/
+/*
+#latest-launch iframe {
+	height: 720px;
+	width: 1280px;
+	border: none;
+	display: block;
+	margin: auto;
+}
+*/
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.video-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+.article-container {
+	border-bottom: 5px solid #2861BC;
+	padding-bottom: 50px;
+	padding-top: 20px;
+	margin: 0 5px 0 5px;
+}
 /* 
 
 
@@ -107,4 +152,9 @@ body {
 	.hamburger-menu {
 		display: none;
 	}
+	.article-container {
+	padding-bottom: 100px;
+	padding-top: 100px;
+	margin: 0;
+}
 }
