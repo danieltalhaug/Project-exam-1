@@ -185,7 +185,7 @@ main {
   	position: absolute;
   	top: 40%;
   	width: auto;
-  	padding: 16px;
+  	padding: 25px;
   	margin-top: -50px;
   	color: white;
   	font-weight: bold;
@@ -196,11 +196,11 @@ main {
 }
 .next {
   	right: 0;
-  	border-radius: 3px 0 0 3px;
+  	border-radius: 5px 0 0 5px;
 }
 .prev:hover,
 .next:hover {
-  	background-color: rgba(0, 0, 0, 0.8);
+  	background-color: rgba(0, 0, 0, 0.5);
 }
 .numbertext {
   	color: #f2f2f2;
@@ -223,6 +223,35 @@ main {
 }
 .active, .demo:hover {
   	opacity: 1;
+}
+/* 
+					Footer 
+*/
+footer div {
+	margin: 0;
+	padding: 0;
+	
+}
+.footer-links {
+	max-width: 1280px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+    padding-top: 80px;
+	list-style: none;
+	align-items: center
+}
+.footer-links a {
+	margin: 0;
+	padding: 15px 0 15px 0;
+	flex-grow: 1;
+	text-align: center;
+	font-size: 1.1em;
+	text-decoration: none;
+	color: black;
+}
+.footer-links a:hover {
+	color: #2861BC;
 }
 /* 
 
@@ -264,5 +293,8 @@ main {
 	.img-table-container img {
 	width: 70%;
 	height: 70%;
-}
+	}
+	.footer-links {
+	flex-direction: row;
+	}
 }
