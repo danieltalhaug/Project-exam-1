@@ -239,7 +239,7 @@ footer div {
 	flex-direction: column;
     padding-top: 80px;
 	list-style: none;
-	align-items: center
+	align-items: center;
 }
 .footer-links a {
 	margin: 0;
@@ -253,6 +253,23 @@ footer div {
 .footer-links a:hover {
 	color: #2861BC;
 }
+.footer-icons {
+	width: 600px;
+	padding-top: 40px;
+	padding-bottom: 1000px;
+	display: flex;
+	flex-direction: row;
+	margin: auto;
+}
+.footer-icons a {
+	flex-grow: 1;
+}
+.footer-icons a img {
+	width: 55px;
+	display: block;
+    margin: 0 auto;
+}
+
 /* 
 
 
