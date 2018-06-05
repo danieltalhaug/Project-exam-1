@@ -254,9 +254,8 @@ footer div {
 	color: #2861BC;
 }
 .footer-icons {
-	width: 600px;
+	max-width: 600px;
 	padding-top: 40px;
-	padding-bottom: 1000px;
 	display: flex;
 	flex-direction: row;
 	margin: auto;
@@ -265,9 +264,16 @@ footer div {
 	flex-grow: 1;
 }
 .footer-icons a img {
-	width: 55px;
+	width: 40px;
 	display: block;
     margin: 0 auto;
+}
+.footer-icons a img:hover {
+	opacity: 0.7;
+}
+.footer-text {
+	padding: 40px 0 40px 0;
+	text-align: center;
 }
 
 /* 
@@ -277,7 +283,6 @@ footer div {
 
 
 */
-
 @media (min-width: 1025px) {
 	.nav-container,
 	.main-nav {
@@ -313,5 +318,10 @@ footer div {
 	}
 	.footer-links {
 	flex-direction: row;
+	}
+}
+@media (min-width: 768px) {
+	.footer-icons a img {
+	width: 55px;
 	}
 }
