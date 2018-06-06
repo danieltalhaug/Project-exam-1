@@ -11,9 +11,9 @@
 <body>
 	<nav class="nav-container" id="mobileNav">
 		<ul class="main-nav">
-			<li><a href="">Latest Launch</a></li>
-			<li><a href="">Upcoming Launch</a></li>
-			<li><a href="">Images</a></li>
+			<li><a href="#latest-launch">Latest Launch</a></li>
+			<li><a href="#upcoming-launch">Upcoming Launch</a></li>
+			<li><a href="#image-gallery">Images</a></li>
 			<li><a href="">Contact</a></li>
 		</ul>
 	</nav>
@@ -22,6 +22,175 @@
 		<div></div>
 		<div></div>
 	</div>
+	<section>
+		<div class="rocket-image" id="top">
+			<figure>
+				<img src="images/Rocket-white.svg" alt="Falcon Heavy Rocket illustration">
+			</figure>
+		</div>
+	</section>
+	<main>
+		<article class="article-container" id="latest-launch">
+			<div class="video-container">
+				<iframe src="https://www.youtube.com/embed/I_0GgKfwCSk" allowfullscreen></iframe>
+			</div>
+			<h1>The latest SpaceX launch</h1>
+			<div class="table-container">
+				<table>
+					<tr>
+						<td>Flight Number:</td>
+						<td>Null</td>
+					</tr>
+					<tr>
+						<td>Mission Name:</td>
+						<td>Null</td>
+					</tr>
+					<tr>
+						<td>Launch Date:</td>
+						<td>Null</td>
+					</tr>
+					<tr>
+						<td>Rocket Name:</td>
+						<td>Null</td>
+					</tr>
+					<tr>
+						<td>Payload Type:</td>
+						<td>Null</td>
+					</tr>
+					<tr>
+						<td>Payload Mass:</td>
+						<td>Null</td>
+					</tr>
+				</table>
+			</div>
+			<div class="details-container">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem similique pariatur enim earum. Dolores consequuntur esse, voluptate nam recusandae, earum ipsam non explicabo sequi in ut voluptatum blanditiis possimus, iste. Tempore aspernatur at ab accusantium qui est. Commodi rerum ad, quisquam laudantium rem aspernatur ea numquam delectus quae deleniti cumque, temporibus quam! Fuga maiores corporis ipsum ipsam omnis reiciendis rerum architecto officiis voluptate, magni incidunt hic saepe, placeat quo unde, rem illum vero. Cumque unde vero temporibus aspernatur nemo corporis?</p>
+			</div>
+		</article>
+		<article class="article-container" id="upcoming-launch">
+			<h2>The next SpaceX launch</h2>
+			<div class="img-table-container">
+				<div class="item-1">
+					<figure>
+						<img src="images/astronaut.svg" alt="Astronaut floating in space">
+					</figure>
+				</div>
+				<div class="item-2">
+					<table>
+						<tr>
+							<td>Flight Number:</td>
+							<td>Null</td>
+						</tr>
+						<tr>
+							<td>Mission Name:</td>
+							<td>Null</td>
+						</tr>
+						<tr>
+							<td>Launch Date:</td>
+							<td>Null</td>
+						</tr>
+						<tr>
+							<td>Rocket Name:</td>
+							<td>Null</td>
+						</tr>
+						<tr>
+							<td>Payload Type:</td>
+							<td>Null</td>
+						</tr>
+						<tr>
+							<td>Payload Mass:</td>
+							<td>Null</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</article>
+		<article class="article-container" id="image-gallery">
+			<div class="gallery-container">
+				<div class="mySlides">
+					<div class="numbertext">1/6</div>
+					<img src="images/gallery/NROL-76-Mission.jpg" alt="NROL 76 Mission Launch" style="width:100%">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext">2/6</div>
+					<img src="images/gallery/CRS-8.jpg" alt="CRS-8 landing" style="width:100%">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext">3/6</div>
+					<img src="images/gallery/CRS-3-launch.jpg" alt="CRS-3 Launch" style="width:100%">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext">4/6</div>
+					<img src="images/gallery/CRS-13-Mission.jpg" alt="CRS-13 landing" style="width:100%">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext">5/6</div>
+					<img src="images/gallery/ECHOSTAR-105SES-11-MISSION.jpg" alt="Echostar flying rocket" style="width:100%">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext">6/6</div>
+					<img src="images/gallery/SES-9-launch.jpg" alt="SES-9 Launch long exposure" style="width:100%">
+				</div>
+				
+				<a class="prev" onClick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onClick="plusSlides(1)">&#10095;</a>
+				
+				<div class="gallery-row">
+					<div class="gallery-column">
+						<img class="demo cursor" src="images/thumbnails/NROL-76-Mission-thumbnail.jpg" alt="NROL 76 Mission Launch" style="width:100%" onclick="currentSlide(1)">
+					</div>
+					
+					<div class="gallery-column">
+						<img class="demo cursor" src="images/thumbnails/CRS-8-thumbnail.jpg" alt="CRS-8 landing" style="width:100%" onclick="currentSlide(2)">
+					</div>
+					
+					<div class="gallery-column">
+						<img class="demo cursor" src="images/thumbnails/CRS-3-launch-thumbnail.jpg" alt="CRS-3 Launch" style="width:100%" onclick="currentSlide(3)">
+					</div>
+					
+					<div class="gallery-column">
+						<img class="demo cursor" src="images/gallery/CRS-13-Mission.jpg" alt="CRS-13 landing" style="width:100%" onclick="currentSlide(4)">
+					</div>
+					
+					<div class="gallery-column">
+						<img class="demo cursor" src="images/gallery/ECHOSTAR-105SES-11-MISSION.jpg" alt="Echostar flying rocket" style="width:100%" onclick="currentSlide(5)">
+					</div>
+					
+					<div class="gallery-column">
+						<img class="demo cursor" src="images/thumbnails/SES-9-launch-thumbnail.jpg" alt="SES-9 Launch long exposure" style="width:100%" onclick="currentSlide(6)">
+					</div>
+				</div>
+			</div>
+		</article>
+	</main>
+	<footer>
+		<div class="footer-links">
+			<a href="#latest-launch">Latest launch</a>
+			<a href="#upcoming-launch">Next launch</a>
+			<a href="#image-gallery">Image gallery</a>
+			<a href="">Contact</a>
+			<a href="#top">Back to top</a>
+		</div>
+		<div class="footer-icons">
+			<a href="#"><img class="social-media-icon" src="images/icons/facebook-square-gray.svg" alt="Facebook icon"></a>
+			<a href="#"><img src="images/icons/flickr-square-gray.svg" alt="Flickr icon"></a>
+			<a href="#"><img src="images/icons/instagram-gray.svg" alt="Instagram icon"></a>
+			<a href="#"><img src="images/icons/twitter-square-gray.svg" alt="Twitter icon"></a>
+			<a href="#"><img src="images/icons/youtube-square-gray.svg" alt="Youtube icon"></a>
+		</div>
+		<div class="footer-text">
+			<p>&#169; Daniel Talhaug <script type="text/javascript">document.write(new Date().getFullYear());</script></p>
+		</div>
+	</footer>
 <script src="js/script.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
