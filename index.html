@@ -7,7 +7,6 @@
 <link rel="stylesheet" href="css/stylesheet.css">
 <link href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand" rel="stylesheet">
 </head>
-	
 <body>
 	<nav class="nav-container" id="mobileNav">
 		<ul class="main-nav">
@@ -37,34 +36,27 @@
 			<h1>The latest SpaceX launch</h1>
 			<div class="table-container">
 				<table>
-					<tr>
-						<td>Flight Number:</td>
-						<td>Null</td>
+					<tr id="latestFlightNumber">
 					</tr>
-					<tr>
-						<td>Mission Name:</td>
-						<td>Null</td>
+					
+					<tr id="latestMissionName">
 					</tr>
-					<tr>
-						<td>Launch Date:</td>
-						<td>Null</td>
+					
+					<tr id="latestLaunchDate">
 					</tr>
-					<tr>
-						<td>Rocket Name:</td>
-						<td>Null</td>
+					
+					<tr id="latestRocketName">
 					</tr>
-					<tr>
-						<td>Payload Type:</td>
-						<td>Null</td>
+					
+					<tr id="latestPayloadType">
 					</tr>
-					<tr>
-						<td>Payload Mass:</td>
-						<td>Null</td>
+					
+					<tr id="latestPayloadMass">
 					</tr>
 				</table>
 			</div>
 			<div class="details-container">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem similique pariatur enim earum. Dolores consequuntur esse, voluptate nam recusandae, earum ipsam non explicabo sequi in ut voluptatum blanditiis possimus, iste. Tempore aspernatur at ab accusantium qui est. Commodi rerum ad, quisquam laudantium rem aspernatur ea numquam delectus quae deleniti cumque, temporibus quam! Fuga maiores corporis ipsum ipsam omnis reiciendis rerum architecto officiis voluptate, magni incidunt hic saepe, placeat quo unde, rem illum vero. Cumque unde vero temporibus aspernatur nemo corporis?</p>
+				<p id="latestDetails"></p>
 			</div>
 		</article>
 		<article class="article-container" id="upcoming-launch">
@@ -77,29 +69,22 @@
 				</div>
 				<div class="item-2">
 					<table>
-						<tr>
-							<td>Flight Number:</td>
-							<td>Null</td>
+						<tr id="nextFlightNumber">
 						</tr>
-						<tr>
-							<td>Mission Name:</td>
-							<td>Null</td>
+						
+						<tr id="nextMissionName">
 						</tr>
-						<tr>
-							<td>Launch Date:</td>
-							<td>Null</td>
+						
+						<tr id="nextLaunchDate">
 						</tr>
-						<tr>
-							<td>Rocket Name:</td>
-							<td>Null</td>
+						
+						<tr id="nextRocketName">
 						</tr>
-						<tr>
-							<td>Payload Type:</td>
-							<td>Null</td>
+						
+						<tr id="nextPayloadType">
 						</tr>
-						<tr>
-							<td>Payload Mass:</td>
-							<td>Null</td>
+						
+						<tr id="nextPayloadMass">
 						</tr>
 					</table>
 				</div>
@@ -182,7 +167,9 @@
 			<p>&#169; Daniel Talhaug <script type="text/javascript">document.write(new Date().getFullYear());</script></p>
 		</div>
 	</footer>
-<script src="js/script.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/latestFlight.js"></script>
+	<script src="js/nextFlight.js"></script>
 </body>
 </html>
 
