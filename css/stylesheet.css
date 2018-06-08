@@ -315,10 +315,13 @@ form p {
 	padding: 30px 80px 30px 80px;
 }
 input[type=text] {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
     width: 100%;
     padding: 12px 20px;
 }
 textarea {
+	font-family: 'Montserrat', sans-serif;
 	width: 100%;
     height: 250px;
     padding: 15px 20px;
@@ -345,6 +348,81 @@ input[type=text]:focus, textarea:focus {
 }
 .submit-btn:active {
 	background-color: #299AD3;
+}
+/* 
+					Modal 
+*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+.close {
+    color: black;
+    position: absolute;
+    right: 0px;
+    font-size: 42px;
+	cursor: pointer;
+	padding-right: 15px;
+}
+.close:hover {
+	color: rgba(0,0,0,.5);
+}
+.modal-content img {
+	padding-top: 50px;
+	max-width: 150px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.modal-content {
+	margin: 0 auto;
+}
+.modal-content h2 {
+	margin: 0;
+	padding: 10px 0 10px 0;
+}
+.modal-content p, .link-container {
+	text-align: center;
+	margin: 0 auto;
+}
+.link-container {
+	padding: 40px 0 50px;
+}
+.link-container a {
+	color: #2861BC;
+	text-decoration: none;
+	font-size: 14px;
+}
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
 }
 /* 
 
@@ -388,6 +466,9 @@ input[type=text]:focus, textarea:focus {
 	}
 	.footer-links {
 	flex-direction: row;
+	}
+	.modal-content {
+    width: 40%;
 	}
 }
 @media (min-width: 768px) {
