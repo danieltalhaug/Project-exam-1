@@ -275,7 +275,77 @@ footer div {
 	padding: 40px 0 40px 0;
 	text-align: center;
 }
+/* 
 
+
+					Contact page 
+
+
+*/
+.contact-container {
+	border-bottom: 5px solid #2861BC;
+	padding-bottom: 100px;
+}
+.form-text-container {
+	max-width: 1280px;
+}
+.form-text-container h1 {
+	padding-bottom: 0;
+}
+.form-text-container p {
+	text-align: center;
+	padding-bottom: 30px;
+}
+.form-background {
+	background-color: #2e3144; /* Fallback */
+	background: linear-gradient(#2e3144, #4a5b9b); /* Fallback */
+	background-image: url(../images/star-background.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	max-width: 700px;
+	margin: 0 auto;
+}
+form p {
+	padding: 15px 0 0 0;
+	margin: 0;
+	color: white;
+	font-size: 14px;
+}
+.form-container {
+	padding: 30px 80px 30px 80px;
+}
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+}
+textarea {
+	width: 100%;
+    height: 250px;
+    padding: 15px 20px;
+	border: none;
+	font-size: 16px;
+    resize: none;
+}
+input[type=text]:focus, textarea:focus {
+	outline: none;
+	border: 3px solid #2861BC;
+}
+.submit-btn {
+	position: relative;
+	padding: 15px 10px;
+	background-color: #2CAFFF;
+	color: white;
+	cursor: pointer;
+	border: none;
+	margin: 20px 0 20px 0;
+}
+.submit-btn:hover {
+	background-color: #43C0FF;
+	transition: .3s;
+}
+.submit-btn:active {
+	background-color: #299AD3;
+}
 /* 
 
 
