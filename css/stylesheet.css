@@ -349,6 +349,9 @@ input[type=text]:focus, textarea:focus {
 .submit-btn:active {
 	background-color: #299AD3;
 }
+.error {
+	border: 1px solid #FF8A8A;
+}
 /* 
 					Modal 
 */
