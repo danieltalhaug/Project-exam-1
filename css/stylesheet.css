@@ -46,7 +46,7 @@ figure {
 }
 .main-nav a {
 	text-decoration: none;
-	padding: 20px 0;
+	padding: 25px 0;
 	text-align: center;
 	display: block;
 	color: #2861BC;
@@ -68,6 +68,8 @@ figure {
 	top: 0;
     right: 0;
 	width: 0;
+	height: 100%;
+	overflow:hidden;
 	
 }
 .nav-container.open {
@@ -76,11 +78,12 @@ figure {
 }
 .hamburger-menu {
 	display: block;
-	position: absolute;
+	position: fixed;
 	bottom: 20px;
 	right: 20px;
-	background-color: #fff;
-	padding: 5px;
+	background-color: #fff; /*Fallback background colour*/
+	background-color: rgba(255,255,255,0.2);
+	padding: 4px 5px;
 	cursor: pointer;
 	z-index: 5;
 }
@@ -484,7 +487,7 @@ input[type=text]:focus, textarea:focus {
 	}
 	.table-container table {
 	padding-left: 150px;
-}
+	}
 }
 @media (min-width: 480px) {
 	h1, h2 {
@@ -496,12 +499,12 @@ input[type=text]:focus, textarea:focus {
 	text-align: left;
     padding: 5px;
 	font-size: 1.2em;
-}
+	}
 .details-container {
 	padding-top: 30px;
 	font-size: 1.2em;
-}
+	}
 	.img-table-container table td {
 	font-size: 1.2em;
-}
+	}
 }
