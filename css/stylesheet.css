@@ -12,12 +12,14 @@ Lighter Blue: HEX #2CAFFF RGB 44 175 255
   box-sizing: border-box;
 }
 body {
+	font-family: 'Helvetica', 'Arial', "sans-serif";/*Fallback font-family*/
 	font-family: 'Montserrat', sans-serif;
 	line-height: 1.6;
 	letter-spacing: 1px;
 	margin: 0;
 }
 h1, h2, h3 {
+	font-family: 'Helvetica', 'Arial', "sans-serif";/*Fallback font-family*/
 	font-family: 'Quicksand', sans-serif;
 	color: #2861BC;
 }
@@ -56,7 +58,7 @@ figure {
 	color: #4D91FF;
 }
 .nav-container {
-	background-color: #f4f4f4; /* placeholder*/
+	background-color: #fff;
 	padding-top: 5px;
 	padding-bottom: 80%;
 	flex-direction: row;
@@ -77,7 +79,7 @@ figure {
 	position: absolute;
 	bottom: 20px;
 	right: 20px;
-	background-color: #f4f4f4; /* placeholder*/
+	background-color: #fff;
 	padding: 5px;
 	cursor: pointer;
 	z-index: 5;
