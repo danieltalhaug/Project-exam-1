@@ -441,6 +441,34 @@ input[type=text]:focus, textarea:focus {
 
 
 */
+@media (min-width: 480px) {
+	h1, h2 {
+	font-size: 2.5em;
+	}
+	.table-container table td {
+	text-align: left;
+    padding: 5px;
+	font-size: 1.2em;
+	}
+.details-container {
+	padding-top: 30px;
+	font-size: 1.2em;
+	}
+	.img-table-container table td {
+	font-size: 1.2em;
+	}
+}
+@media (min-width: 768px) {
+	.footer-icons a img {
+	width: 55px;
+	}
+	.table-container table {
+	padding-left: 150px;
+	}
+	h1, h2 {
+	font-size: 3.5em;
+	}
+}
 @media (min-width: 1025px) {
 	.nav-container,
 	.main-nav {
@@ -479,32 +507,5 @@ input[type=text]:focus, textarea:focus {
 	}
 	.modal-content {
     width: 40%;
-	}
-}
-@media (min-width: 768px) {
-	.footer-icons a img {
-	width: 55px;
-	}
-	.table-container table {
-	padding-left: 150px;
-	}
-}
-@media (min-width: 480px) {
-	h1, h2 {
-	font-size: 3.5em;
-	text-align: center;
-	padding: 15px 0 15px 0;
-	}
-	.table-container table td {
-	text-align: left;
-    padding: 5px;
-	font-size: 1.2em;
-	}
-.details-container {
-	padding-top: 30px;
-	font-size: 1.2em;
-	}
-	.img-table-container table td {
-	font-size: 1.2em;
 	}
 }
