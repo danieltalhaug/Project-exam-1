@@ -24,7 +24,7 @@ h1, h2, h3 {
 	color: #2861BC;
 }
 h1, h2 {
-	font-size: 3.5em;
+	font-size: 2em;
 	text-align: center;
 	padding: 15px 0 15px 0;
 }
@@ -126,20 +126,21 @@ main {
 	margin: 0 5px 0 5px;
 }
 .table-container {
-	max-width: 500px;
-	margin: auto;
+	margin: 0 auto;
 }
 .table-container table {
-	border-collapse: collapse;
-    width: 100%;
+	max-width: 100%;
+	margin: 0 auto;
+	padding-left: 0px;
 }
 .table-container table td {
 	text-align: left;
     padding: 5px;
-	font-size: 1.2em;
+	font-size: 1em;
 }
 .details-container {
 	padding-top: 30px;
+	font-size: 1em;
 }
  /* 
 					Next Launch 
@@ -159,6 +160,7 @@ main {
 .img-table-container img {
 	width: 160%;
 	height: 160%;
+	margin: 0 auto;
 }
 .img-table-container table {
 	width: 100%;
@@ -167,7 +169,7 @@ main {
 .img-table-container table td {
 	text-align: left;
     padding: 5px;
-	font-size: 1.2em;
+	font-size: 1em;
 }
 /* 
 					Image Gallery 
@@ -480,4 +482,26 @@ input[type=text]:focus, textarea:focus {
 	.footer-icons a img {
 	width: 55px;
 	}
+	.table-container table {
+	padding-left: 150px;
+}
+}
+@media (min-width: 480px) {
+	h1, h2 {
+	font-size: 3.5em;
+	text-align: center;
+	padding: 15px 0 15px 0;
+	}
+	.table-container table td {
+	text-align: left;
+    padding: 5px;
+	font-size: 1.2em;
+}
+.details-container {
+	padding-top: 30px;
+	font-size: 1.2em;
+}
+	.img-table-container table td {
+	font-size: 1.2em;
+}
 }
