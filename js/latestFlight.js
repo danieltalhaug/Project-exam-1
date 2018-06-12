@@ -1,6 +1,6 @@
 // JavaScript Document
 fetch('https://api.spacexdata.com/v2/launches/latest')
-	.then(result => result.json())
+	.then(latest => latest.json())
 	.then((res) => {
 	latestFlightNumber(res);
 	latestMissionName(res);
@@ -12,39 +12,84 @@ fetch('https://api.spacexdata.com/v2/launches/latest')
 })	
 .catch(err => console.log(err))
 
-function latestFlightNumber(result){
+function latestFlightNumber(latest){
 	var details = document.getElementById('latestFlightNumber');
 	details.innerHTML += "<td>Flight Number:" + "</td>";
-	details.innerHTML += "<td>" + result.flight_number + "</td>";
+	details.innerHTML += "<td>" + latest.flight_number + "</td>";
 }
-function latestMissionName(result){
+function latestMissionName(latest){
 	var details = document.getElementById('latestMissionName');
 	details.innerHTML += "<td>Mission Name:" + "</td>";
-	details.innerHTML += "<td>" + result.mission_name + "</td>";
+	details.innerHTML += "<td>" + latest.mission_name + "</td>";
 }
-function latestLaunchDate(result) {
+function latestLaunchDate(latest) {
 	var details = document.getElementById('latestLaunchDate');
 	details.innerHTML += "<td>Launch Date:" + "</td>";
-	details.innerHTML += "<td>" + result.launch_date_local + "</td>";
+	details.innerHTML += "<td>" + latest.launch_date_local + "</td>";
 }
-function latestRocketName(result) {
+function latestRocketName(latest) {
 	var details = document.getElementById('latestRocketName');
 	details.innerHTML +="<td>Rocket Name:" + "</td>";
-	details.innerHTML +="<td>" + result.rocket.rocket_name + "</td>";
+	details.innerHTML +="<td>" + latest.rocket.rocket_name + "</td>";
 }
-function latestPayloadType(result) {
+function latestPayloadType(latest) {
 	var details = document.getElementById('latestPayloadType');
 	details.innerHTML +="<td>Payload Type:" + "</td>";
-	details.innerHTML +="<td>" + result.rocket.second_stage.payloads[0].payload_type + "</td>";
+	details.innerHTML +="<td>" + latest.rocket.second_stage.payloads[0].payload_type + "</td>";
 }
-function latestPayloadMass(result) {
+function latestPayloadMass(latest) {
 	var details = document.getElementById('latestPayloadMass');
 	details.innerHTML +="<td>Payload Mass:" + "</td>";
-	details.innerHTML +="<td>" + result.rocket.second_stage.payloads[0].payload_mass_kg + " Kg </td>";
+	details.innerHTML +="<td>" + latest.rocket.second_stage.payloads[0].payload_mass_kg + " Kg </td>";
 }
-function latestDetailText(result) {
+function latestDetailText(latest) {
 	var details = document.getElementById('latestDetails');
-	details.innerHTML += result.details;
+	details.innerHTML += latest.details;
 }
 
-// video link: result.links.video_link
+// video link: latest.links.video_link
+
+
+fetch('https://api.spacexdata.com/v2/launches/next')
+	.then(next => next.json())
+	.then((res) => {
+	nextFlightNumber(res);
+	nextMissionName(res);
+	nextLaunchDate(res);
+	nextRocketName(res);
+	nextPayloadType(res);
+	nextPayloadMass(res);
+})	
+
+.catch(err => console.log(err))
+
+function nextFlightNumber(next){
+	var details = document.getElementById('nextFlightNumber');
+	details.innerHTML += "<td>Flight Number:" + "</td>";
+	details.innerHTML += "<td>" + next.flight_number + "</td>";
+}
+function nextMissionName(next){
+	var details = document.getElementById('nextMissionName');
+	details.innerHTML += "<td>Mission Name:" + "</td>";
+	details.innerHTML += "<td>" + next.mission_name + "</td>";
+}
+function nextLaunchDate(next) {
+	var details = document.getElementById('nextLaunchDate');
+	details.innerHTML += "<td>Launch Date:" + "</td>";
+	details.innerHTML += "<td>" + next.launch_date_local + "</td>";
+}
+function nextRocketName(next) {
+	var details = document.getElementById('nextRocketName');
+	details.innerHTML +="<td>Rocket Name:" + "</td>";
+	details.innerHTML +="<td>" + next.rocket.rocket_name + "</td>";
+}
+function nextPayloadType(next) {
+	var details = document.getElementById('nextPayloadType');
+	details.innerHTML +="<td>Payload Type:" + "</td>";
+	details.innerHTML +="<td>" + next.rocket.second_stage.payloads[0].payload_type + "</td>";
+}
+function nextPayloadMass(next) {
+	var details = document.getElementById('nextPayloadMass');
+	details.innerHTML +="<td>Payload Mass:" + "</td>";
+	details.innerHTML +="<td>" + next.rocket.second_stage.payloads[0].payload_mass_kg + " Kg </td>";
+}
