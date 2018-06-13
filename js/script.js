@@ -1,4 +1,5 @@
 // JavaScript Document
+// Navigation code
 function toggleNav() {
 	var nav = document.getElementById("mobileNav");
 	if (nav.className === "nav-container") {
@@ -7,7 +8,7 @@ function toggleNav() {
 		nav.className = "nav-container";
 	}
 }
-
+// Slideshow code
 var slideIndex = 1;
 showSlides(slideIndex);
 
