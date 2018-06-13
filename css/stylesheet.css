@@ -163,6 +163,7 @@ main {
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
 	        flex-direction: column;
+	flex:1
 }
 .item-1 {
 	-webkit-box-flex: 1;
