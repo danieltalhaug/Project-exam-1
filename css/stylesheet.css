@@ -9,7 +9,8 @@ Dark blue: HEX #2861BC RGB 40 97 188
 Lighter Blue: HEX #2CAFFF RGB 44 175 255
 */
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 body {
 	font-family: 'Helvetica', 'Arial', "sans-serif";/*Fallback font-family*/
@@ -39,7 +40,6 @@ figure {
 
 
 */
-
 .main-nav {
   	padding: 0;
   	list-style: none;
@@ -61,8 +61,13 @@ figure {
 	background-color: #fff;
 	padding-top: 5px;
 	padding-bottom: 80%;
-	flex-direction: row;
-	justify-content: flex-end;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
     z-index: 1;
 	position: fixed;
 	top: 0;
@@ -74,6 +79,8 @@ figure {
 }
 .nav-container.open {
 	width: 100%;
+	-webkit-transition: .4s;
+	-o-transition: .4s;
 	transition: .4s;
 }
 .hamburger-menu {
@@ -149,15 +156,24 @@ main {
 					Next Launch 
 */
 .img-table-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 }
 .item-1 {
-	flex-grow: 1;
+	-webkit-box-flex: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
 	margin: 0 auto;
 }
 .item-2 {
-	flex-grow: 1;
+	-webkit-box-flex: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
 	margin: 0 auto;
 }
 .img-table-container img {
@@ -198,7 +214,9 @@ main {
   	font-weight: bold;
   	font-size: 20px;
   	border-radius: 0 3px 3px 0;
-  	user-select: none;
+  	-moz-user-select: none;
+  	 -ms-user-select: none;
+  	     user-select: none;
   	-webkit-user-select: none;
 }
 .next {
@@ -242,16 +260,25 @@ footer div {
 .footer-links {
 	max-width: 1280px;
 	margin: 0 auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
     padding-top: 80px;
 	list-style: none;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 .footer-links a {
 	margin: 0;
 	padding: 15px 0 15px 0;
-	flex-grow: 1;
+	-webkit-box-flex: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
 	text-align: center;
 	font-size: 1.1em;
 	text-decoration: none;
@@ -263,12 +290,19 @@ footer div {
 .footer-icons {
 	max-width: 600px;
 	padding-top: 40px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
 	margin: auto;
 }
 .footer-icons a {
-	flex-grow: 1;
+	-webkit-box-flex: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
 }
 .footer-icons a img {
 	width: 40px;
@@ -305,6 +339,9 @@ footer div {
 }
 .form-background {
 	background-color: #2e3144; /* Fallback */
+	background: -webkit-gradient(linear, left top, left bottom, from(#2e3144), to(#4a5b9b));
+	background: -webkit-linear-gradient(#2e3144, #4a5b9b);
+	background: -o-linear-gradient(#2e3144, #4a5b9b);
 	background: linear-gradient(#2e3144, #4a5b9b); /* Fallback */
 	background-image: url(../images/star-background.svg);
 	background-size: cover;
@@ -351,6 +388,8 @@ input[type=text]:focus, textarea:focus {
 }
 .submit-btn:hover {
 	background-color: #43C0FF;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
 	transition: .3s;
 }
 .submit-btn:active {
@@ -382,7 +421,8 @@ input[type=text]:focus, textarea:focus {
     padding: 0;
     border: 1px solid #888;
     width: 80%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
@@ -472,6 +512,8 @@ input[type=text]:focus, textarea:focus {
 @media (min-width: 1025px) {
 	.nav-container,
 	.main-nav {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
 	}
 	.nav-container {
@@ -495,15 +537,23 @@ input[type=text]:focus, textarea:focus {
 	margin: 0;
 	}
 	.img-table-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
 	}
 	.img-table-container img {
 	width: 70%;
 	height: 70%;
 	}
 	.footer-links {
-	flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
 	}
 	.modal-content {
     width: 40%;
