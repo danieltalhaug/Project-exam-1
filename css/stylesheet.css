@@ -33,6 +33,23 @@ figure {
 	padding: 0;
 	margin: 0;
 }
+.text {
+	font-family: 'Helvetica', 'Arial', "sans-serif";/*Fallback font-family*/
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.6;
+	letter-spacing: 1px;
+	margin: 0;
+	text-align: center;
+	font-size: 1em;
+	padding-bottom: 40px;
+}
+.text a {
+	color: black;
+	text-decoration: none;
+}
+.text a:hover {
+	color: #2861BC;
+}
 /* 
 
 
@@ -151,6 +168,7 @@ main {
 .details-container {
 	padding-top: 30px;
 	font-size: 1em;
+	text-align: center;
 }
  /* 
 					Next Launch 
@@ -513,6 +531,10 @@ input[type=text]:focus, textarea:focus {
 	.form-container {
 	padding: 30px 40px 30px 40px;
 	}
+	.text {
+	font-size: 1.2em;
+	padding-bottom: 20px;
+}
 }
 
 @media (min-width: 768px) {
